@@ -1,0 +1,219 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* .main-section {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(184, 245, 224);
+
+} */
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(5, 65px);
+    align-items: stretch;
+    justify-items: stretch;
+    align-content: center;
+    justify-content: center;
+    grid-row-gap: 16px;
+    
+
+    /* flex-basis: 50%; */
+    /* max-width: 800px; */
+    height: 200vh;
+    background-color: rgb(184, 245, 224);
+}
+
+.daniel-clifford {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    /* grid-row-start: row-1-start;
+    grid-row-end: row-1-end; */
+    background-color: hsl(263, 55%, 52%);
+    padding: 16px;
+    border: hidden;
+    border-radius: 5px;
+    height: unset;
+}
+
+.daniel-clifford .svg-icon {
+    position: absolute;
+    padding-top: 6px;
+    top: 16%;
+    right: 20%;   
+}
+
+.daniel-clifford h5 {
+    color:  hsl(210, 46%, 95%);
+    position: relative;
+}
+
+.daniel-clifford p {
+    color: hsl(0, 0%, 81%);
+    font-size: 10px;
+    margin-top: 10px;
+}
+
+.jonathan-walters {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    background-color: hsl(217, 19%, 35%);
+    padding: 16px;
+    border: hidden;
+    border-radius: 5px;
+    height: unset;
+}
+
+
+.jonathan-walters h5 {
+    color:  hsl(210, 46%, 95%);
+}
+
+.jonathan-walters p {
+    color: hsl(0, 0%, 81%);
+    font-size: 10px;
+    margin-top: 10px;
+}
+
+.jeanette-harmon {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    background-color: hsl(0, 0%, 100%);
+    padding: 16px;
+    border: hidden;
+    border-radius: 5px;
+    height: unset;
+}
+
+.jeanette-harmon h5 {
+    color: hsl(0, 1%, 32%);
+}
+
+.jeanette-harmon p {
+    color: hsl(0, 0%, 81%);
+    font-size: 10px;
+    margin-top: 10px;
+}
+
+.patrick-abrams {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    background-color:  hsl(219, 29%, 14%);
+    color: white;
+    padding: 16px;
+    border: hidden;
+    border-radius: 5px;
+    height: unset;
+}
+
+.patrick-abrams h5 {
+    color: hsl(0, 17%, 91%);
+}
+
+.patrick-abrams p {
+    color: hsl(0, 0%, 81%);
+    font-size: 10px;
+    margin-top: 10px;
+}
+
+.kira-whittle {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: auto;
+    grid-row-end: auto;
+    padding: 16px;
+    border: hidden;
+    border-radius: 5px;
+    background-color: white;
+    height: unset;
+}
+
+.kira-whittle h5 {
+    color: hsl(0, 1%, 32%);
+}
+
+.kira-whittle p {
+    color: hsl(0, 0%, 81%);
+    font-size: 10px;
+    margin-top: 10px;
+}
+
+td img {
+    width: 25px;
+    margin-right: 8px;
+    border: hidden;
+    border-radius: 50%;
+}
+
+.td {
+    color: hsl(0, 24%, 96%);
+    font-weight: bold;
+    font-size: 10px;
+}
+
+.td1 {
+    color: hsl(0, 0%, 50%);
+}
+
+tr span {
+    color: hsl(0, 0%, 81%);
+    display: block;
+    font-weight: normal;
+    font-size: 10px;
+}
+
+@media (min-width: 40rem) and (min-width: 40rem){
+    .content {
+        grid-template-columns: repeat(5, 180px);
+        grid-template-rows: [row-1-start] 205px [row-1-end] 170px;
+        height: 100vh;
+        /* grid-column-end: unset; */
+        grid-column-gap: 16px;
+        grid-row-gap: unset;
+
+    }    
+    .daniel-clifford {
+        grid-column-start: 1;
+        grid-column-end: span 2;
+        height: 190px;
+    }
+
+    .daniel-clifford .svg-icon {
+        position: absolute;
+        padding: 4px;
+        top: 18%;
+        right: 62%;   
+    }
+
+    .jonathan-walters {
+        grid-column-start: -4;
+        grid-column-end: -3;
+        height: 190px;
+    }
+
+    .jeanette-harmon {
+        grid-column-start: -6;
+        grid-column-end: -6;
+        height: 190px;
+    }
+
+    .patrick-abrams {
+        grid-column-start: 2;
+        grid-column-end: -3;
+        height: 190px;
+
+    }
+
+    .kira-whittle {
+        grid-column-start: 4;
+        grid-column-end: 4;
+        grid-row-start: 4;
+        grid-row-end: -3;
+        height: 395px;
+    }
+}   
