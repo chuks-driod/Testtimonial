@@ -4,15 +4,6 @@
     margin: 0;
 }
 
-/* .main-section {
-    display: flex;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(184, 245, 224);
-
-} */
-
 .content {
     display: grid;
     grid-template-columns: repeat(5, 65px);
@@ -21,10 +12,6 @@
     align-content: center;
     justify-content: center;
     grid-row-gap: 16px;
-    
-
-    /* flex-basis: 50%; */
-    /* max-width: 800px; */
     height: 200vh;
     background-color: rgb(184, 245, 224);
 }
@@ -32,20 +19,29 @@
 .daniel-clifford {
     grid-column-start: 1;
     grid-column-end: 6;
-    /* grid-row-start: row-1-start;
-    grid-row-end: row-1-end; */
     background-color: hsl(263, 55%, 52%);
-    padding: 16px;
+    padding: 0 16px 16px 16px;
     border: hidden;
     border-radius: 5px;
     height: unset;
+    display: grid;
+}
+
+.daniel-clifford > table {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    grid-row-start: 1;
+    grid-row-end: span 1;
+    width: 50%;
 }
 
 .daniel-clifford .svg-icon {
-    position: absolute;
-    padding-top: 6px;
-    top: 16%;
-    right: 20%;   
+    grid-column-start: 1;
+    grid-column-end: span 1;
+    grid-row-start: 1;
+    grid-row-end: span 1;
+    margin-left: 60%;
+    height: 80px;
 }
 
 .daniel-clifford h5 {
@@ -172,7 +168,6 @@ tr span {
         grid-template-columns: repeat(5, 180px);
         grid-template-rows: [row-1-start] 205px [row-1-end] 170px;
         height: 100vh;
-        /* grid-column-end: unset; */
         grid-column-gap: 16px;
         grid-row-gap: unset;
 
@@ -185,7 +180,7 @@ tr span {
 
     .daniel-clifford .svg-icon {
         position: absolute;
-        padding: 4px;
+        padding: 10px;
         top: 18%;
         right: 62%;   
     }
